@@ -9,12 +9,13 @@ public class Array {
     }
 
     public void insert (int item){
+        items[count++] = item;
 
 
     }
 
     public void print (){
-        for (int i = 0; i < items.length; i++){
+        for (int i = 0; i < count; i++){
             System.out.println(items[i]);
         }
     }

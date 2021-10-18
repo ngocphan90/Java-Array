@@ -36,7 +36,8 @@ public class Array {
         //count present number of item in the array not the size of the array
         count--;
     }
-    // O(n) in worst case
+    //search the item
+    // O(n) in worst case: O(n)
     public int indexOf( int item){
         for (int i =0 ; i< count; i++)
             if (items[i] == item)

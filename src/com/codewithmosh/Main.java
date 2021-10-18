@@ -3,11 +3,22 @@ package com.codewithmosh;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+       // LinkedList<Integer> list = new LinkedList<>();
+       LinkedList list = new LinkedList();
+
+
+
+
+
+
+
+	// array
+        /*
         Array numbers = new Array(1);
 
         numbers.insert(20);
@@ -22,8 +33,9 @@ public class Main {
         list.add(200);
         list.remove(0);
         list.indexOf(0);
+        list.toArray();
         System.out.println(list);
 
-
+        */
     }
 }

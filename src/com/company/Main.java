@@ -1,14 +1,12 @@
 package com.company;
 
-import com.codewithmosh.Array;
-
-import java.util.Arrays;
 
 public class Main {
-
     public static void main(String[] args) {
-	// write your code here
-        Array numbers = new Array (3);
-        numbers.insert(10);
+        var list = new LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+
+
     }
 }

@@ -38,38 +38,70 @@ public class LinkedList {
         }
     }
 
-    private boolean isEmpty(){
+    private boolean isEmpty() {
         return first == null;
     }
-     public int indexOf( int item){
+
+    public int indexOf(int item) {
         int index = 0;
         var current = first;
-        while (current != null){
+        while (current != null) {
             if (current.value == item) return index;
-            current= current.next;
+            current = current.next;
             index++;
         }
         return -1;
-     }
+    }
 
-     public boolean contains (int item){
-        return indexOf(item) !=1;
-     }
+    public boolean contains(int item) {
+        return indexOf(item) != 1;
+    }
 
-     public void removeFirst(){
+    public void removeFirst() {
         if (isEmpty())
             throw new NoSuchElementException();
-        if (first == last){
+        if (first == last) {
             first = last = null;
             return;
         }
         var second = first.next;
         first.next = null;
         first = second;
+    }
 
-     }
+    public void removeLast() {
+        if (isEmpty())
+            throw new NoSuchElementException();
+        if (first == last){
+            first = last = null;
+            return;
+        }
+        var previous = getPrevious(last);
+        last = previous;
+        last.next = null;
 
+    }
 
+    private Node getPrevious(Node node) {
+        var current = first;
+        while (current != null) {
+            if (current.next == node) return current;
+            current = current.next;
+        }
+        return null;
+    }
 
+    public int getKthFromTheEnd(int k) {
+        var a = first;
+        var b = first;
+        for (int i = 0; i < k - 1; i++)
+            b = b.next;
+        while (b != last) {
+            a = a.next;
+            b = b.next;
+        }
+        return a.value;
+
+    }
 
 }

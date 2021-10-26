@@ -12,7 +12,6 @@ public class Main {
      //list.addLast(10);
      //list.addLast(20);
 	 //array
-        /*
         Array numbers = new Array(1);
 
         numbers.insert(20);
@@ -29,7 +28,5 @@ public class Main {
         list.indexOf(0);
         list.toArray();
         System.out.println(list);
-
-        */
     }
 }

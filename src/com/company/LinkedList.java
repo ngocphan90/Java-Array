@@ -14,7 +14,7 @@ public class LinkedList {
         }
     }
 
-    //first and class node
+    //first and last node
     private Node first;
     private Node last;
 
